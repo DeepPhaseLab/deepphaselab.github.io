@@ -1,86 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DeepPhaseLab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DeepPhaseLab 深相实验室</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
+      font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
+      background: #f8f8f8;
+      color: #333;
     }
-
     header {
-      background-color: #ffffff;
-      padding: 40px 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background-color: #003366;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-
-    header img {
-      max-width: 180px;
+    header h1 {
+      margin: 0;
+      font-size: 28px;
     }
-
-    h1 {
-      font-size: 2em;
-      margin: 20px 0 10px;
-      color: #222;
-    }
-
-    p.subtitle {
-      font-size: 1.1em;
-      color: #555;
-    }
-
-    section {
-      margin: 40px auto;
-      max-width: 700px;
-      padding: 0 20px;
-    }
-
-    a {
-      color: #007acc;
+    nav a {
+      color: white;
+      margin-left: 20px;
       text-decoration: none;
+      font-weight: bold;
     }
-
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #003366;
+    }
     footer {
-      margin-top: 60px;
+      background-color: #f0f0f0;
+      text-align: center;
       padding: 20px;
-      background-color: #eee;
-      font-size: 0.9em;
+      font-size: 14px;
       color: #666;
-    }
-
-    .contact {
-      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.png" alt="DeepPhaseLab Logo" />
-    <h1>Welcome to DeepPhaseLab</h1>
-    <p class="subtitle">Microstructure simulation platform for energy materials.</p>
+    <h1>DeepPhaseLab | 深相实验室</h1>
+    <nav>
+      <a href="#about">About / 关于我们</a>
+      <a href="#contact">Contact / 联系方式</a>
+    </nav>
   </header>
 
-  <section>
-    <p>
-      DeepPhaseLab is a lightweight, scalable simulation platform focused on phase-field modeling 
-      of microstructure evolution in batteries, fuel cells, and advanced materials. Our tool integrates 
-      reaction-diffusion, stress coupling, and morphological evolution under redox conditions.
-    </p>
+  <main>
+    <section id="about">
+      <h2>🔬 About DeepPhaseLab / 关于深相实验室</h2>
+      <p>
+        DeepPhaseLab is an open modeling platform focused on microstructural evolution in energy materials. We integrate phase-field modeling with multi-physics coupling to simulate diffusion, reaction, stress, and structural transformation across systems such as SOFCs, lithium-ion, and solid-state batteries.
+      </p>
+      <p>
+        深相实验室是一个专注于能源材料微结构演化模拟的建模平台，基于相场法融合扩散、应力和反应等多物理场机制，广泛适用于燃料电池、锂电池、固态电池等系统的数字化仿真与预测分析。
+      </p>
+    </section>
 
-    <div class="contact">
-      <p>📧 Contact us: <a href="mailto:info@deepphaselab.com">info@deepphaselab.com</a></p>
-      <p>🌐 GitHub: <a href="https://github.com/deepphaselab" target="_blank">deepphaselab</a></p>
-    </div>
-  </section>
+    <section id="contact">
+      <h2>📬 Contact Us / 联系我们</h2>
+      <p>
+        Email: <a href="mailto:info@deepphaselab.com">info@deepphaselab.com</a>
+      </p>
+      <p>
+        For academic collaborations, technical inquiries or business opportunities, feel free to reach out.
+      </p>
+      <p>
+        如需学术合作、技术支持或商业洽谈，欢迎通过邮箱联系我们。
+      </p>
+    </section>
+  </main>
 
   <footer>
-    © 2025 DeepPhaseLab. All rights reserved.
+    &copy; 2025 DeepPhaseLab 深相实验室. All rights reserved.
   </footer>
 
 </body>
