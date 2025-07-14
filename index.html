@@ -1,27 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DeepPhaseLab</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
-      padding: 40px;
-      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
     }
-    img {
-      width: 240px;
-      margin-bottom: 20px;
+
+    header {
+      background-color: #ffffff;
+      padding: 40px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+
+    header img {
+      max-width: 180px;
+    }
+
     h1 {
-      color: #2a2a2a;
+      font-size: 2em;
+      margin: 20px 0 10px;
+      color: #222;
+    }
+
+    p.subtitle {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    section {
+      margin: 40px auto;
+      max-width: 700px;
+      padding: 0 20px;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      background-color: #eee;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    .contact {
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="DeepPhaseLab Logo">
-  <h1>Welcome to DeepPhaseLab</h1>
-  <p>Microstructure simulation platform for energy materials.</p>
+
+  <header>
+    <img src="logo.png" alt="DeepPhaseLab Logo" />
+    <h1>Welcome to DeepPhaseLab</h1>
+    <p class="subtitle">Microstructure simulation platform for energy materials.</p>
+  </header>
+
+  <section>
+    <p>
+      DeepPhaseLab is a lightweight, scalable simulation platform focused on phase-field modeling 
+      of microstructure evolution in batteries, fuel cells, and advanced materials. Our tool integrates 
+      reaction-diffusion, stress coupling, and morphological evolution under redox conditions.
+    </p>
+
+    <div class="contact">
+      <p>📧 Contact us: <a href="mailto:info@deepphaselab.com">info@deepphaselab.com</a></p>
+      <p>🌐 GitHub: <a href="https://github.com/deepphaselab" target="_blank">deepphaselab</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 DeepPhaseLab. All rights reserved.
+  </footer>
+
 </body>
 </html>
