@@ -1,98 +1,71 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DeepPhaseLab 深相实验室</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepPhaseLab | 深相实验室</title>
   <style>
-    body {
-      font-family: 'Helvetica Neue', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f8f8f8;
-      color: #333;
-    }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    h2 {
-      color: #003366;
-    }
-    footer {
-      background-color: #f0f0f0;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #666;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; }
+    header { background-color: #002F66; color: white; padding: 15px 30px; display: flex; align-items: center; justify-content: space-between; }
+    header img { height: 40px; margin-right: 10px; }
+    nav a { color: white; margin-left: 20px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 960px; margin: auto; padding: 40px 20px; background: white; }
+    h2 { color: #002F66; }
+    .section { margin-bottom: 50px; }
+    footer { background-color: #f0f0f0; text-align: center; padding: 20px; font-size: 14px; }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>DeepPhaseLab | 深相实验室</h1>
+    <div style="display: flex; align-items: center;">
+      <img src="logo.png" alt="DeepPhaseLab Logo">
+      <h1 style="margin: 0; font-size: 22px;">DeepPhaseLab | 深相实验室</h1>
+    </div>
     <nav>
       <a href="#about">About / 关于我们</a>
+      <a href="#publications">Publications / 学术论文</a>
+      <a href="#patents">Patents / 专利成果</a>
       <a href="#contact">Contact / 联系方式</a>
     </nav>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>🔬 About DeepPhaseLab / 关于深相实验室</h2>
-      <p>
-        DeepPhaseLab is an open modeling platform focused on microstructural evolution in energy materials. We integrate phase-field modeling with multi-physics coupling to simulate diffusion, reaction, stress, and structural transformation across systems such as SOFCs, lithium-ion, and solid-state batteries.
-      </p>
-      <p>
-        深相实验室是一个专注于能源材料微结构演化模拟的建模平台，基于相场法融合扩散、应力和反应等多物理场机制，广泛适用于燃料电池、锂电池、固态电池等系统的数字化仿真与预测分析。
-      </p>
+  <div class="container">
+    <section id="about" class="section">
+      <h2>🔍 About DeepPhaseLab / 关于深相实验室</h2>
+      <p>DeepPhaseLab is an open modeling platform focused on microstructural evolution in energy materials. We integrate phase-field modeling with multi-physics coupling to simulate diffusion, reaction, stress, and structural transformation across systems such as SOFCs, lithium-ion, and solid-state batteries.</p>
+      <p>深相实验室是一个自主研发的能源材料微观结构模拟平台，培根于相场模型，实现扩散/反应/应力/热场等多物理场耗合进化，应用于壮氧化物维电池，锂电池和固态电池等系统。</p>
     </section>
 
-    <section id="contact">
-      <h2>📬 Contact Us / 联系我们</h2>
-      <p>
-        Email: <a href="mailto:info@deepphaselab.com">info@deepphaselab.com</a>
-      </p>
-      <p>
-        For academic collaborations, technical inquiries or business opportunities, feel free to reach out.
-      </p>
-      <p>
-        如需学术合作、技术支持或商业洽谈，欢迎通过邮箱联系我们。
-      </p>
+    <section id="publications" class="section">
+      <h2>📖 Publications / 学术论文</h2>
+      <ul>
+        <li>
+          Zhenjun Jiao; Yunpeng Su; Wenyue Yang; Jianli Zhou; Jin Zhang; Xiaofeng Tong; Yijing Shang; Ming Chen. 
+          <strong>Integrated 3D modeling unravels the measures to mitigate nickel migration in solid oxide fuel/electrolysis cells</strong>,
+          <em>Journal of Materials Chemistry A</em>, 2024, 12(1): 162-173.
+        </li>
+      </ul>
     </section>
-  </main>
+
+    <section id="patents" class="section">
+      <h2>📚 Patents / 专利成果</h2>
+      <ul>
+        <li>“基于相场法的SOFC电极微观结构的力学模型模拟分析方法”　发明专利　自主研发：ZL 2024 1 0646614.0，授权日期：2024-07-26
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>💌 Contact Us / 联系我们</h2>
+      <p>Email: <a href="mailto:info@deepphaselab.com">info@deepphaselab.com</a></p>
+      <p>For academic collaborations, technical inquiries or business opportunities, feel free to reach out.</p>
+      <p>如需学术合作、技术支持或商务沟通，欢迎邮箱联系我们。</p>
+    </section>
+  </div>
 
   <footer>
-    &copy; 2025 DeepPhaseLab 深相实验室. All rights reserved.
+    © 2025 DeepPhaseLab 深相实验室. All rights reserved.
   </footer>
-
 </body>
 </html>
